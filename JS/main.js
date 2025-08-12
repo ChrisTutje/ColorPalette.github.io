@@ -47,7 +47,7 @@ function createColorElement(color) {
   el.className = 'color';
   el.textContent = color.name || color.label;
   el.style.backgroundColor = color.hexcode || '#444';
-  el.style.color = color.complimentaryColor || '#ffffff';
+  el.style.color = `hsl(${(parseFloat(color.degrees) + 180) % 360}, 100%, 50%)` || '#F0F0F0';
   el.style.width = `${colorSize}px`;
   el.style.height = `${colorSize}px`;
   el.style.position = 'absolute';
