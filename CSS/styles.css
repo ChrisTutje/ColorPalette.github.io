@@ -1,0 +1,95 @@
+:root {
+   --spacing-unit: 1em;
+   --font-size: 1rem; /* 16px */
+   --line-height: 1.6;
+   --font-family: system-ui, 'Inter', Arial, sans-serif;
+
+   --background-color: linear-gradient(to bottom, #f0f0f0 , #c0c0c0);
+   --background-text-color: hsl(from var(--background-color, #f0f0f0) calc(h + 180) s calc(100 - l));
+   --border-color: var(--background-text-color, #808080);
+   --border-background-color: var(--background-color, #f0f0f0);
+
+   --text-color: #333;
+   --header-color: var(--text-color, #333);
+   --list-color: var(--text-color, #333);
+   --shadow-color: #000000;
+
+   --anchor-color: #17a2b8;
+   --anchor-active-color: var(--anchor-color, #17a2b8);
+   --anchor-hover-color: hsl(from var(--anchor-color, #17a2b8) h s calc(l + 20));
+   --anchor-visited-color: #551A8B;
+
+   --button-font-size: var(--font-size, 1rem);
+   --button-background-color: #808080;
+   --button-color: color-mix(in srgb, var(--button-background-color) 50%, black 50%);
+   --button-hover-color: hsl(from var(--button-color) h s calc(l + 20));
+   --button-active-color: hsl(from var(--button-color) h s calc(l + 50));
+   --button-padding: calc(var(--spacing-unit, 1em) * 0.786);
+
+   --navbar-background-color: var(--background-color, #f0f0f0);
+   --navbar-border-color: color-mix(in srgb, var(--navbar-background-color, #000000) 50%, black 50%);
+   --navbar-button-color: hsl(from var(--navbar-background-color, #f0f0f0) calc(h + 180) s calc(100 - l));
+   --navbar-hover-color: hsl(from var(--navbar-background-color, #f0f0f0) h s calc(l + 20));
+   --navbar-dropdown-background-color: var(--navbar-background-color, #f0f0f0);
+   --navbar-dropdown-button-color: var(--navbar-button-color);
+   --navbar-dropdown-hover-color: var(--navbar-hover-color);
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+   background: var(--background-color, #f0f0f0);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   color: var(--background-text-color, #000000);
+   font-family: var(--font-family, system-ui, 'Inter', Arial, sans-serif);
+   font-size: var(--font-size, 1rem);
+   line-height: var(--line-height, 1.5);
+   margin: calc(var(--spacing-unit, 1em) / 2);
+   text-align: left;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   font-smooth: never;
+   text-rendering: optimizeLegibility;
+}
+
+.border {
+   border: 1px solid var(--border-color, #808080);
+   background-color: #000000;
+   border-radius: 1.618em;
+   padding: var(--spacing-unit, 1em);
+   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+#circleGraph {
+  position: relative;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: visible;
+}
+
+#circleGraph .color {
+  position: absolute;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  text-align: center;
+  font-family: var(--font-family, sans-serif);
+  font-size: var(--font-size, 1rem);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  user-select: none;
+  padding: calc(var(--button-padding, .786em) / 2) var(--button-padding, .786em);
+  border-radius: 50%;
+  white-space: nowrap;
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+}
+
+#circleGraph .color:hover {
+   transform: scale(1.1);
+}
+
