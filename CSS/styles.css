@@ -1,3 +1,5 @@
+@import './colorPalette.css';
+
 :root {
    --spacing-unit: 1em;
    --font-size: 1rem; /* 16px */
@@ -6,7 +8,7 @@
 
    --background-color: linear-gradient(to bottom, #f0f0f0 , #c0c0c0);
    --background-text-color: hsl(from var(--background-color, #f0f0f0) calc(h + 180) s calc(100 - l));
-   --border-color: var(--background-text-color, #808080);
+   --border-color: var(--black, #808080);
    --border-background-color: var(--background-color, #f0f0f0);
 
    --text-color: #333;
@@ -66,30 +68,29 @@ body {
 }
 
 #circleGraph {
-  position: relative;
-  margin: 0 auto;
-  border-radius: 50%;
-  overflow: visible;
+   position: relative;
+   margin: 0 auto;
+   border-radius: 50%;
+   overflow: visible;
 }
 
 #circleGraph .color {
-  position: absolute;
-  border: 1px solid #000000;
-  border-radius: 50%;
-  text-align: center;
-  font-family: var(--font-family, sans-serif);
-  font-size: var(--font-size, 1rem);
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  user-select: none;
-  padding: calc(var(--button-padding, .786em) / 2) var(--button-padding, .786em);
-  border-radius: 50%;
-  white-space: nowrap;
-  overflow: hidden; 
-  text-overflow: ellipsis; 
+   position: absolute;
+   border: 1px solid var(--border-color, #000000);
+   border-radius: 50%;
+   text-align: center;
+   font-family: var(--font-family, sans-serif);
+   font-size: var(--font-size, 1rem);
+   user-select: none;
+   border-radius: 50%;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
 }
 
 #circleGraph .color:hover {
-   transform: scale(1.1);
+   transform: scale(2.0);
+   font-size: calc(var(--font-size, 1rem) * .5);
+   z-index: 10;
 }
 

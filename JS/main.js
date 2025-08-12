@@ -1,6 +1,6 @@
 import { colors } from './colors.js';
 
-const colorSize = 100;
+const colorSize = 50;
 const colorArcLength = colorSize * 1.0;
 
 const [validColors, invalidColors] = colors.reduce((acc, color) => {
