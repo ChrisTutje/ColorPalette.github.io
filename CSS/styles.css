@@ -146,5 +146,27 @@ body {
   cursor: pointer;
 }
 
+#wheel-selector {
+  margin-bottom: 1rem;
+}
+
+#wheel-selector label {
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+#wheel-selector select {
+  padding: 0.25rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background: white;
+}
+
+#category-filters {
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
 
 

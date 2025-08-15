@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/styles.css">
-</head>
-<style>
-</style>
-<body>
-<header>
-
-</header>
-<div id="color-filters">
-  <fieldset>
-    <legend>Filter Colors</legend>
-  </fieldset>
-</div>
-<div id="circleGraph" class=""></div>
-    <script type="module", src="JS/main.js">
-    </script>
-</body>
-<footer>
-
-</footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Palette</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <body>
+    <div id="color-filters">
+      <fieldset>
+        <legend>Color Wheel Controls</legend>
+        <div id="wheel-selector">
+          <label for="wheel-type">Color Wheel:</label>
+          <select id="wheel-type" name="wheel-type">
+            <option value="saturated" selected>Saturated</option>
+            <option value="shaded">Shaded</option>
+            <option value="muted">Muted</option>
+            <option value="tinted">Tinted</option>
+          </select>
+        </div>
+        <div id="category-filters">
+          <fieldset>
+            <legend>Filter Colors</legend>
+          </fieldset>
+        </div>
+      </fieldset>
+    </div>
+    <div id="circleGraph" class=""></div>
+    <script type="module" , src="JS/main.js"></script>
+  </body>
+  <footer></footer>
 </html>
