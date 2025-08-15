@@ -1,18 +1,22 @@
-export const colors = [
-// {name: 'black', hexcode: '#000000', degrees: '', categories: ['greyscale'],},
-// {name: 'slate',  hexcode: '#404040', degrees: '', categories: ['greyscale'],},
-// {name: 'grey',  hexcode: '#808080', degrees: '', categories: ['greyscale'],},
-// {name: 'silver',  hexcode: '#C0C0C0', degrees: '', categories: ['greyscale'],},
-// {name: 'white',  hexcode: '#ffffff', degrees: '', categories: ['greyscale'],},
+export const greyscaleColors = [
+{name: 'black', hexcode: '#000000', degrees: '', categories: ['greyscale'],},
+{name: 'slate',  hexcode: '#404040', degrees: '', categories: ['greyscale'],},
+{name: 'grey',  hexcode: '#808080', degrees: '', categories: ['greyscale'],},
+{name: 'silver',  hexcode: '#C0C0C0', degrees: '', categories: ['greyscale'],},
+{name: 'white',  hexcode: '#ffffff', degrees: '', categories: ['greyscale'],},
+];
 
-// {name: 'brown',  hexcode: '#88540B', degrees: '', categories: ['brownscale'],},
-// {name: 'auburn',  hexcode: '#A52A2A', degrees: '', categories: ['brownscale'],},
-// {name: 'taupe',  hexcode: '#a9a48e', degrees: '', categories: ['brownscale'],},
-// {name: 'beige',  hexcode: '#F5F5DC', degrees: '', categories: ['brownscale'],},
-// {name: 'umber',  hexcode: '#8B4513', degrees: '', categories: ['brownscale'],},
-// {name: 'sienna',  hexcode: '#A0522D', degrees: '', categories: ['brownscale'],},
-// {name: 'sepia',  hexcode: '#5E2612', degrees: '', categories: ['brownscale'],},
+export const brownscaleColors = [
+{name: 'brown',  hexcode: '#88540B', degrees: '', categories: ['brownscale'],},
+{name: 'auburn',  hexcode: '#A52A2A', degrees: '', categories: ['brownscale'],},
+{name: 'taupe',  hexcode: '#a9a48e', degrees: '', categories: ['brownscale'],},
+{name: 'beige',  hexcode: '#F5F5DC', degrees: '', categories: ['brownscale'],},
+{name: 'umber',  hexcode: '#8B4513', degrees: '', categories: ['brownscale'],},
+{name: 'sienna',  hexcode: '#A0522D', degrees: '', categories: ['brownscale'],},
+{name: 'sepia',  hexcode: '#5E2612', degrees: '', categories: ['brownscale'],},
+];
 
+export const saturatedColors = [
 {name: 'red',  hexcode: '#FF0000', degrees: '0', categories: ['primary'],},
 {name: 'yellow',  hexcode: '#FFFF00', degrees: '60', categories: ['primary'],},
 {name: 'green',  hexcode: '#00FF00', degrees: '120', categories: ['primary'],},
@@ -60,9 +64,96 @@ export const colors = [
 {name: 'veronica',  hexcode: '#8000FF', degrees: '262.5', categories: ['quaternary'],},
 {name: 'amethyst',  hexcode: '#A000FF', degrees: '277.5', categories: ['quaternary'],},
 {name: 'phlox',  hexcode: '#E000FF', degrees: '292.5', categories: ['quaternary'],},
-{name: 'fuchsia',  hexcode: '#FF00E0', degrees: '307.5', categories: ['quaternary'],},
+{name: 'fuchsia',  hexcode: '#FF00E0', degrees: '307.5', categories: ['quaternary']},
 {name: 'deep-pink',  hexcode: '#FF00A0', degrees: '322.5', categories: ['quaternary'],},
 {name: 'raspberry',  hexcode: '#FF0060', degrees: '337.5', categories: ['quaternary'],},
 {name: 'amaranth',  hexcode: '#FF0020', degrees: '352.5', categories: ['quaternary'],},
+];
+
+export const shadedColors = [
+{name: 'maroon',  hexcode: '#800000', degrees: '0', categories: ['primary'],},
+{name: 'gold',  hexcode: '#808000', degrees: '60', categories: ['primary'],},
+{name: 'viridian',  hexcode: '#008000', degrees: '120', categories: ['primary'],},
+{name: 'teal',  hexcode: '#008080', degrees: '180', categories: ['primary' ],},
+{name: 'navy',  hexcode: '#000080', degrees: '240', categories: ['primary' ],},
+{name: 'plum',  hexcode: '#800080', degrees: '300', categories: ['primary' ],},
+
+{name: 'hazel',  hexcode: '#804000', degrees: '30', categories: ['secondary' ],},
+{name: 'martian',  hexcode: '#408000', degrees: '90', categories: ['secondary' ],},
+{name: 'jungle',  hexcode: '#008040', degrees: '150', categories: ['secondary' ],},
+{name: 'midnight',  hexcode: '#004080', degrees: '210', categories: ['secondary' ],},
+{name: 'indigo',  hexcode: '#400080', degrees: '270', categories: ['secondary' ],},
+{name: 'wine',  hexcode: '#800040', degrees: '330', categories: ['secondary' ],},
+
+{name: 'cinnabar',  hexcode: '#802200', degrees: '15', categories: ['tertiary' ],},
+{name: 'earth',  hexcode: '#806200', degrees: '45', categories: ['tertiary' ],},
+{name: 'olive',  hexcode: '#608000', degrees: '75', categories: ['tertiary' ],},
+{name: 'pepper',  hexcode: '#228000', degrees: '105', categories: ['tertiary' ],},
+{name: 'verdant',  hexcode: '#008022', degrees: '135', categories: ['tertiary' ],},
+{name: 'abyssal',  hexcode: '#008060', degrees: '165', categories: ['tertiary' ],},
+{name: 'adriatic',  hexcode: '#006080', degrees: '195', categories: ['tertiary' ],},
+{name: 'dark-cerulean',  hexcode: '#002280', degrees: '225', categories: ['tertiary' ],},
+{name: 'denim',  hexcode: '#220080', degrees: '255', categories: ['tertiary' ],},
+{name: 'gloam',  hexcode: '#600080', degrees: '285', categories: ['tertiary' ],},
+{name: 'xereus',  hexcode: '#800060', degrees: '315', categories: ['tertiary' ],},
+{name: 'oxblood',  hexcode: '#800022', degrees: '345', categories: ['tertiary' ],},
+];
+
+export const mutedColors = [
+{name: 'brick',  hexcode: '#C04040', degrees: '0', categories: ['primary'  ],},
+{name: 'khaki',  hexcode: '#C0C040', degrees: '60', categories: ['primary'  ],},
+{name: 'celadon',  hexcode: '#40C040', degrees: '120', categories: ['primary'  ],},
+{name: 'seafoam',  hexcode: '#40C0C0', degrees: '180', categories: ['primary'  ],},
+{name: 'cadet',  hexcode: '#4040c0', degrees: '240', categories: ['primary'  ],},
+{name: 'grape',  hexcode: '#C040C0', degrees: '300', categories: ['primary'  ],},
+
+{name: 'goldenrod',  hexcode: '#C08040', degrees: '30', categories: ['secondary'  ],},
+{name: 'jasmine',  hexcode: '#80C040', degrees: '90', categories: ['secondary'  ],},
+{name: 'ming',  hexcode: '#40C080', degrees: '150', categories: ['secondary'  ],},
+{name: 'tuft',  hexcode: '#4080C0', degrees: '210', categories: ['secondary'  ],},
+{name: 'harley',  hexcode: '#8040C0', degrees: '270', categories: ['secondary'  ],},
+{name: 'dazzle',  hexcode: '#C04080', degrees: '330', categories: ['secondary'  ],},
+
+{name: 'ochre',  hexcode: '#C06240', degrees: '15', categories: ['tertiary'  ],},
+{name: 'wheat',  hexcode: '#C0A240', degrees: '45', categories: ['tertiary'  ],},
+{name: 'tropical',  hexcode: '#A2C040', degrees: '75', categories: ['tertiary'  ],},
+{name: 'sour',  hexcode: '#62C040', degrees: '105', categories: ['tertiary'  ],},
+{name: 'turf',  hexcode: '#40C062', degrees: '135', categories: ['tertiary'  ],},
+{name: 'dull-aquamarine',  hexcode: '#40C0A2', degrees: '165', categories: ['tertiary'  ],},
+{name: 'norse',  hexcode: '#40A2C0', degrees: '195', categories: ['tertiary'  ],},
+{name: 'speech',  hexcode: '#0044FF', degrees: '225', categories: ['tertiary'  ],},
+{name: 'dragonlord',  hexcode: '#6240C0', degrees: '255', categories: ['tertiary'  ],},
+{name: 'pheromone',  hexcode: '#A240C0', degrees: '285', categories: ['tertiary'  ],},
+{name: 'nusp',  hexcode: '#C040A2', degrees: '315', categories: ['tertiary'  ],},
+{name: 'ruby',  hexcode: '#C04062', degrees: '345', categories: ['tertiary'  ],},
+];
+
+export const tintedColors = [
+{name: 'pink',  hexcode: '#FF8080', degrees: '0', categories: ['primary' ],},
+{name: 'banana',  hexcode: '#FFFF80', degrees: '60', categories: ['primary' ],},
+{name: 'light-green',  hexcode: '#80FF80', degrees: '120', categories: ['primary' ],},
+{name: 'electric',  hexcode: '#80ffff', degrees: '180', categories: ['primary' ],},
+{name: 'light-blue',  hexcode: '#8080FF', degrees: '240', categories: ['primary' ],},
+{name: 'hot-pink',  hexcode: '#FF80FF', degrees: '300', categories: ['primary' ],},
+
+{name: 'coral',  hexcode: '#FFC080', degrees: '30', categories: ['secondary' ],},
+{name: 'avocado',  hexcode: '#C0FF80', degrees: '90', categories: ['secondary' ],},
+{name: 'verdigris',  hexcode: '#80FFC0', degrees: '150', categories: ['secondary' ],},
+{name: 'celeste',  hexcode: '#80C0FF', degrees: '210', categories: ['secondary' ],},
+{name: 'mauve',  hexcode: '#C080FF', degrees: '270', categories: ['secondary' ],},
+{name: 'rouge',  hexcode: '#FF80C0', degrees: '330', categories: ['secondary' ],},
+
+{name: 'salmon',  hexcode: '#FFA280', degrees: '15', categories: ['tertiary' ],},
+{name: 'honey',  hexcode: '#FFE180', degrees: '45', categories: ['tertiary' ],},
+{name: 'mystic',  hexcode: '#E1FF80', degrees: '75', categories: ['tertiary' ],},
+{name: 'radar',  hexcode: '#A2FF80', degrees: '105', categories: ['tertiary' ],},
+{name: 'menthol',  hexcode: '#80FFA2', degrees: '135', categories: ['tertiary' ],},
+{name: 'lagoon',  hexcode: '#80FFE1', degrees: '165', categories: ['tertiary' ],},
+{name: 'light-capri',  hexcode: '#80E1FF', degrees: '195', categories: ['tertiary' ],},
+{name: 'pool',  hexcode: '#80A2FF', degrees: '225', categories: ['tertiary' ],},
+{name: 'lilac',  hexcode: '#A280FF', degrees: '255', categories: ['tertiary' ],},
+{name: 'orchid',  hexcode: '#E180FF', degrees: '285', categories: ['tertiary' ],},
+{name: 'grenadine',  hexcode: '#FF80E1', degrees: '315', categories: ['tertiary' ],},
+{name: 'blush',  hexcode: '#FF80A2', degrees: '345', categories: ['tertiary' ],},
 ];
 

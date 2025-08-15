@@ -1,4 +1,4 @@
-import { colors } from './colors.js';
+import { saturatedColors } from './colors.js';
 
 const filterContainer = document.getElementById('color-filters');
 const fieldset = filterContainer.querySelector('fieldset');
@@ -6,7 +6,7 @@ const fieldset = filterContainer.querySelector('fieldset');
 const colorSize = 50;
 const colorArcLength = colorSize * 1.0;
 
-const [validColors, invalidColors] = colors.reduce((acc, color) => {
+const [validColors, invalidColors] = saturatedColors.reduce((acc, color) => {
   const degrees = parseInt(color.degrees);
   if (!isNaN(degrees) && color.degrees !== '') {
     acc[0].push(color);
@@ -63,7 +63,7 @@ function createColorElement(color) {
   return el;
 }
 
-const allCategories = [...new Set(colors.flatMap(color => color.categories || []))];
+const allCategories = [...new Set(saturatedColors.flatMap(color => color.categories || []))];
 let selectedCategories = [...allCategories]; 
 
 allCategories.forEach(category => {
@@ -93,7 +93,7 @@ function updateFilters() {
 function renderColorWheel() {
   circleGraph.innerHTML = '';
   
-  const [validColors, invalidColors] = colors.reduce((acc, color) => {
+  const [validColors, invalidColors] = saturatedColors.reduce((acc, color) => {
     const hasValidDegree = !isNaN(parseFloat(color.degrees)) && color.degrees !== '';
     const hasValidCategory = color.categories?.some(cat => selectedCategories.includes(cat));
     
